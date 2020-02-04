@@ -40,7 +40,6 @@ public class MoneyTransferServiceTest {
 		Mockito.when(commissionService.getCommissionAmount(Mockito.eq(SENDER_ACCOUNT), Mockito.any(BigDecimal.class)))
 				.thenReturn(BigDecimal.TEN);
 
-
 		//Test için concrete objemi artık çağırıyorum
 		underTest.sendMoney(SENDER_ACCOUNT, RECEIVER_ACCOUNT, BigDecimal.ONE);
 	}
